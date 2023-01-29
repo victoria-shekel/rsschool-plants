@@ -291,12 +291,6 @@ body {
     margin: 40px 0 60px 0;
 }
 .prices-section_right-side {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
-    /*height: 50px;*/
-    /*width: 1220px;*/
-
     color: #000000;
     font-family: 'Inter', 'Inika', Helvetica, sans-serif;
     font-size: 40px;
@@ -751,7 +745,7 @@ body {
     }
     .welcome_wrapper {
         grid-template-columns: 1fr;
-        height: 450px;
+        height: 400px;
         width: fit-content;
         align-self: center;
         justify-self: center;
@@ -776,6 +770,7 @@ body {
     .main-section_header {
         font-size: 30px;
         line-height: 40px;
+        margin: 0 0 30px 0;
     }
     .about_wrapper {
         grid-template-columns: 1fr;
@@ -1058,7 +1053,7 @@ body {
     }
     .prices-section_header {
         font-size: 40px;
-        margin: 95px 0 60px 0;
+        margin: 67px 0 60px 0;
     }
     .prices-section_right-side {
         font-size: 25px;
@@ -1073,13 +1068,15 @@ body {
     }
     .contacts_wrapper {
         grid-template-columns: 450px;
-        grid-template-rows: 139px 300px 300px;
-        height: 739px;
-
+        grid-template-rows: 139px 200px 350px;
+        height: 689px;
     }
     .contacts-section_part-one {
         order: 4;
         text-align: center;
+    }
+    .contacts-section_button {
+        margin-top: 100px;
     }
     .contacts-woman-img {
         height: 250px;
@@ -1198,6 +1195,9 @@ body {
         font-size: 40px;
         margin: 95px 0 60px 0;
     }
+    .prices-section_right-side-header {
+        line-height: 45px;
+    }
     .prices-section_right-side {
         font-size: 35px;
         line-height: 35px;
@@ -1211,16 +1211,22 @@ body {
     }
     .contacts_wrapper {
         grid-template-columns: 450px;
-        grid-template-rows: 139px 300px 300px;
+        grid-template-rows: 139px 200px 400px;
         height: 739px;
     }
     .contacts-section_part-one {
         order: 4;
         text-align: center;
     }
+    .contacts-section_part-three {
+        height: 200px;
+    }
     .contacts-woman-img {
         height: 300px;
         width: 250px;
+    }
+    .contacts-section_button {
+        margin-top: 100px;
     }
     .footer-author-info {
         width: 400px;
