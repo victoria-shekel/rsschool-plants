@@ -492,7 +492,253 @@ body {
 /*** МЕДИА ЗАПРОСЫ ***/
 
 @media screen and (max-width: 379.98px) {
-
+    .nav-center {
+        height: 110px;
+    }
+    .nav-logo {
+        margin-left: 25px;
+    }
+    .nav-wrapper {
+        width: 370px;
+    }
+    .welcome_wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1px 100px 100px;
+        height: 350px;
+        width: 270px;
+        align-self: center;
+        justify-self: center;
+    }
+    .welcome_right-side {
+        width: fit-content;
+    }
+    .welcome_left-side {
+        display: none;
+    }
+    .main-section_p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        width: 270px;
+    }
+    .main-section_button {
+        font-size: 13px;
+        width: 115px;
+        height: 35px;
+    }
+    .main-section_header {
+        font-size: 25px;
+        width: 250px;
+        line-height: 33px;
+        margin: 40px 0 30px 0;
+    }
+    .about_wrapper {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .about-section_img {
+        width: 200px;
+        height: 190px;
+        margin: 10px 0 20px 0;
+    }
+    .about-section_header {
+        margin: 50px 0 30px 30px;
+        font-size: 25px;
+        line-height: 33px;
+        width: 300px;
+    }
+    .about-section_p {
+        font-size: 15px;
+        line-height: 25px;
+        width: 260px;
+        margin-left: 30px;
+    }
+    .about-section_left-side {
+        text-align: center;
+    }
+    .about-section_right-side-side {
+        text-align: center;
+        align-items: center;
+    }
+    .center2 {
+        height: 670px;
+    }
+    .service_wrapper {
+        height: 2500px;
+    }
+    .service-section_button {
+        font-size: 15px;
+        line-height: 20px;
+        height: 30px;
+        width: 70px;
+        padding: 0;
+        margin: 10px 10px 0 0;
+    }
+    .service-section_header {
+        text-align: center;
+        font-size: 23px;
+        line-height: 33px;
+    }
+    .service-section_top {
+        flex-direction: column;
+        justify-content: start;
+        height: 120px;
+        width: 300px;
+        margin: 40px 0 10px 0;
+    }
+    .service-section_card {
+        width: 220px;
+        height: 200px;
+        font-size: 0;
+        justify-self: center;
+        text-align: center;
+    }
+    .service-section_card-img {
+        width: 220px;
+        height: 230px;
+    }
+    .service-section_gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px;
+        grid-row-gap: 35px;
+        width: 300px;
+        height: 2700px;
+        justify-self: center;
+    }
+    .service-section_card-description {
+        padding: 0;
+        font-size: 15px;
+    }
+    .service-section_card-name {
+        font-size: 18px;
+    }
+    .prices_wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 70px 300px;
+        width: fit-content;
+    }
+    .prices-section_header {
+        font-size: 28px;
+        line-height: 30px;
+        margin: 40px 0 40px 0;
+        text-align: center;
+    }
+    .prices-section_right-side {
+        text-align: center;
+        justify-self: center;
+        margin: 0;
+        height: 200px;
+    }
+    .prices-section_right-side-header {
+        font-size: 20px;
+        line-height: 35px;
+        margin: 20px 0;
+        width: 220px;
+    }
+    .prices-section_button {
+        font-size: 15px;
+        line-height: 20px;
+        height: 35px;
+        width: 121px;
+        margin-bottom: 10px;
+    }
+    .center-prices {
+        height: 600px;
+    }
+    .prices-img {
+        display: none;
+    }
+    .prices-section_left-side_dropdown {
+        height: 230px;
+        width: 220px;
+    }
+    .padding1 {
+        padding: 20px 0 10px 20px;
+    }
+    .padding2 {
+        padding: 10px 0 10px 20px;
+    }
+    .padding3 {
+        padding: 10px 0 10px 20px;
+    }
+    .prices-section_left-side {
+        align-items: center;
+        justify-self: center;
+    }
+    .dropbutton-name {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 16px 30px;
+        width: 180px;
+        height: 50px;
+    }
+    .svg_price_button1 {
+        position: absolute;
+        top: 40px;
+        right: 50px;
+    }
+    .svg_price_button2 {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+    .svg_price_button3 {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+    .contacts_wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 125px 125px 200px;
+        justify-self: center;
+        height: 450px;
+    }
+    .contacts-section_header {
+        margin: 50px;
+        font-size: 30px;
+        width: fit-content;
+    }
+    .contacts-section_part-one {
+        order: 4;
+        text-align: center;
+    }
+    .contacts-section_button {
+        font-size: 17px;
+        height: 50px;
+        width: 170px;
+        margin: 50px 0;
+    }
+    .dropdown {
+        width: fit-content;
+    }
+    .svg_contacts_button {
+        position: relative;
+        bottom: -4px;
+        left: -42px;
+    }
+    .contacts-woman-img {
+        height: 144px;
+        width: 120px;
+    }
+    .footer-center {
+        height: 180px;
+        padding-bottom: 15px;
+    }
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 40px 55px;
+    }
+    .footer-text,
+    .footer-rsschool_link {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 0;
+    }
+    .svg_socials {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 
@@ -673,15 +919,16 @@ body {
     }
     .contacts-section_header {
         margin: 50px;
+        font-size: 35px;
+        width: fit-content;
     }
     .contacts-section_part-one {
         order: 4;
         text-align: center;
     }
-
     .contacts-section_button {
         height: 50px;
-        width: 300px;
+        width: 270px;
         margin: 50px 0;
     }
     .svg_contacts_button {
@@ -690,8 +937,8 @@ body {
         left: -42px;
     }
     .contacts-woman-img {
-        height: 124px;
-        width: 100px;
+        height: 144px;
+        width: 120px;
     }
     .footer-center {
         height: 200px;
@@ -986,7 +1233,3 @@ body {
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
-
-
-}
