@@ -23,6 +23,14 @@ body {
 .orange-color {
     color: #E06733;
 }
+/*Custom scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ddeec8;
+    border-radius: 10px;
+}
 
 /*** HEADER ***/
 .nav-center {
@@ -47,7 +55,7 @@ body {
     justify-content: center;
     background: #FFFFFF;
 }
-.contacts-center {
+.center-contacts {
     display: flex;
     justify-content: center;
     background: #EDF2EC;
