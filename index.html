@@ -14,7 +14,6 @@
 <body>
     <div class="container">
     <header class="header">
-        <nav class="nav">
             <div class="nav-center">
                 <div class="nav-wrapper">
                     <div class="nav-logo">
@@ -25,27 +24,31 @@
                         </div>
                         <div class="nav-logo_name">Plants</div>
                     </div>
-                    <ul class="nav-list">
-                        <li class="nav-list_item"><a class="nav-list_link" href="#home_anchor">Home</a></li>
-                        <li class="nav-list_item"><a class="nav-list_link" href="#about_anchor">About&nbsp;us</a></li>
-                        <li class="nav-list_item"><a class="nav-list_link" href="#service_anchor" >Service</a></li>
-                        <li class="nav-list_item"><a class="nav-list_link" href="#prices_anchor">Price</a></li>
-                        <li class="nav-list_item"><a class="nav-list_link" href="#contacts_anchor">Contacts</a></li>
-                    </ul>
+                    <div class="nav-menu">
+                        <span></span>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-list_item"><a class="nav-list_link" href="#home_anchor">Home</a></li>
+                            <li class="nav-list_item"><a class="nav-list_link" href="#about_anchor">About&nbsp;us</a></li>
+                            <li class="nav-list_item"><a class="nav-list_link" href="#service_anchor" >Service</a></li>
+                            <li class="nav-list_item"><a class="nav-list_link" href="#prices_anchor">Price</a></li>
+                            <li class="nav-list_item"><a class="nav-list_link" href="#contacts_anchor">Contacts</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </nav>
     </header>
     <main class="main-section">
         <section class="welcome">
-            <div class="center1">
+            <div class="center1" id="home_anchor">
                     <div class="welcome_wrapper">
                         <div class="welcome_left-side">
                             <img class="welcome_img" src="img/welcome_leafs.png" alt="Image of green leafs">
                         </div>
                         <div class="between"></div>
                         <div class="welcome_right-side">
-                            <h1 class="main-section_header" id="home_anchor">We&nbsp;grow <span class="green-color">plants</span> and give you oxygen</h1>
+                            <h1 class="main-section_header">We&nbsp;grow <span class="green-color">plants</span> and give you oxygen</h1>
                             <p class="main-section_p">Lorem lpsum is&nbsp;simply dummy text of&nbsp;the printing and typesetting industry. Lorem lpsum has been the industry&rsquo;s standard dummy text ever since the 1500s.</p>
                             <p class="main-section_p"><button class="main-section_button">Learn more</button></p>
                         </div>
@@ -68,9 +71,9 @@
             </div>
         </div>
     </section>
-    <section class="service" id="service_anchor">
+    <section class="service">
         <div class="center1">
-            <div class="service_wrapper">
+            <div class="service_wrapper"   id="service_anchor">
                 <div class="service-section_top">
                     <div class="wrapper_service-section_header">
                         <h2 class="service-section_header">Service and our projects</h2>
@@ -131,7 +134,7 @@
         </div>
     </section>
     <section class="prices" id="prices_anchor">
-        <div class="center-prices prices-height">
+        <div class="center-prices">
             <div class="prices_wrapper">
                 <div class="prices-section_left-side">
                     <h2 class="prices-section_header">Prices</h2>

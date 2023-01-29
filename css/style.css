@@ -5,6 +5,9 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
 }
 html {
     scroll-behavior: smooth;
@@ -38,39 +41,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #EDF2EC;
-    height: 134px;
-}
-.center1 {
-    display: flex;
-    justify-content: center;
-    background: #EDF2EC;
-}
-.center2 {
-    display: flex;
-    justify-content: center;
-    background: #FFFFFF;
-}
-.center-prices {
-    display: flex;
-    justify-content: center;
-    background: #FFFFFF;
-}
-.center-contacts {
-    display: flex;
-    justify-content: center;
-    background: #EDF2EC;
-    font-size: 0;
+    background: linear-gradient(25deg, rgba(224,103,51,0.4) 0%, rgba(237, 242, 236, 0.5) 50%);;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 .nav-list {
     list-style: none;
 }
 .nav-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 50px;
-    width: 1220px;
+    height: 40px;
+    width: 100vw;
 }
 .nav-list_item {
     display: inline-block;
@@ -103,12 +88,34 @@ body {
     font-weight: 700;
     transition: color .3s ease-in-out, font-weight .3s ease-in-out;
 }
+.center1 {
+    display: flex;
+    justify-content: center;
+    background: #EDF2EC;
+}
+.center2 {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+}
+.center-prices {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+}
+.center-contacts {
+    display: flex;
+    justify-content: center;
+    background: #EDF2EC;
+    font-size: 0;
+}
 
 /*** Welcome Section***/
 .welcome_wrapper {
     display: grid;
     grid-template-columns: 449px 224px 549px;
-    height: 532px;
+    align-items: center;
+    height: 700px;
     background: #EDF2EC;
 }
 .welcome_img {
@@ -195,7 +202,7 @@ body {
     justify-content: space-between;
     height: 94px;
     width: 1007px;
-    margin: 40px 0 90px 0;
+    margin: 110px 0 90px 0;
 }
 .service-section_header {
     color: #499A18;
@@ -273,14 +280,11 @@ body {
 }
 
 /*** Prices Section***/
-.prices-height {
-    height: 560px;
-}
 .prices_wrapper {
     display: grid;
     grid-template-columns: 332px 438px 452px;
     width: 1222px;
-    height: 405px;
+    height: 700px;
     background: #FFFFFF;
 }
 .prices-section_header {
@@ -288,7 +292,7 @@ body {
     font-family: 'Inter', 'Inika', Helvetica, sans-serif;
     font-size: 40px;
     font-weight: 700;
-    margin: 40px 0 60px 0;
+    margin: 120px 0 60px 0;
 }
 .prices-section_right-side {
     color: #000000;
@@ -298,7 +302,7 @@ body {
     line-height: 50px;
     text-align: right;
     max-width: 463px;
-    margin: 20px 0 38px 0;
+    margin: 85px 0 38px 0;
 }
 .wrapper_button-prices {
     margin: 0;
@@ -378,7 +382,7 @@ body {
 .contacts_wrapper {
     display: grid;
     grid-template-columns: 400px 372px 450px;
-    height: 550px;
+    height: 650px;
     background: #EDF2EC;
 }
 .contacts-section_header {
@@ -390,7 +394,7 @@ body {
     line-height: 52px;
     width: 195px;
     height: 51px;
-    margin: 60px 64px 0 113px;
+    margin: 100px 64px 0 113px;
 }
 .contacts-section_button {
     background: #D6E7D2;
@@ -408,7 +412,7 @@ body {
     width: 450px;
     text-align: left;
     padding: 5px 226px 5px 20px;
-    margin: 148px 0 0 0;
+    margin: 220px 0 0 0;
 }
 .contacts-section_button:hover {
     cursor: pointer;
@@ -487,18 +491,18 @@ body {
 
 @media screen and (max-width: 379.98px) {
     .nav-center {
-        height: 110px;
+        height: 40px;
     }
     .nav-logo {
         margin-left: 25px;
     }
     .nav-wrapper {
-        width: 370px;
+        width: auto;
     }
     .welcome_wrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: 1px 100px 100px;
-        height: 350px;
+        grid-template-rows: 130px 100px 100px;
+        height: 370px;
         width: 270px;
         align-self: center;
         justify-self: center;
@@ -737,11 +741,17 @@ body {
 
 
 @media screen and (min-width: 380px) and (max-width: 767.98px) {
-    .nav-wrapper {
-        width: fit-content;
+    .nav-menu {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
     }
     .nav-logo {
         margin-left: 20px;
+    }
+    .nav-center {
+        height: 50px;
     }
     .welcome_wrapper {
         grid-template-columns: 1fr;
@@ -803,7 +813,7 @@ body {
         height: 670px;
     }
     .service_wrapper {
-        height: 3060px;
+        height: 3100px;
     }
     .service-section_button {
         font-size: 15px;
@@ -816,11 +826,12 @@ body {
     .service-section_header {
         font-size: 25px;
         line-height: 33px;
+        margin-top: 40px;
     }
     .service-section_top {
         flex-direction: column;
         justify-content: start;
-        height: 120px;
+        height: 160px;
         width: 300px;
         margin: 40px 0 50px 0;
     }
@@ -851,7 +862,7 @@ body {
     .prices-section_header {
         font-size: 25px;
         line-height: 30px;
-        margin: 55px 0 40px 0;
+        margin: 65px 0 40px 0;
         text-align: center;
     }
     .prices-section_right-side {
@@ -871,19 +882,19 @@ body {
         width: 121px;
         margin-bottom: 10px;
     }
-    .center-prices {
-        height: 680px;
-    }
     .prices-img {
         display: none;
     }
     .prices-section_left-side_dropdown {
-        height: 285px;
+        height: 300px;
         width: 270px;
     }
     .prices-section_left-side {
         align-items: center;
         justify-self: center;
+    }
+    .center-prices {
+        height: 710px;
     }
     .dropbutton-name {
         font-size: 15px;
@@ -913,7 +924,7 @@ body {
         height: 500px;
     }
     .contacts-section_header {
-        margin: 50px;
+        margin: 30px 50px 50px 50px;
         font-size: 35px;
         width: fit-content;
     }
@@ -953,8 +964,8 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
-    .nav-wrapper {
-        width: 768px;
+    .nav-menu {
+        display: none;
     }
     .nav-logo {
         margin-left: 20px;
@@ -991,10 +1002,9 @@ body {
     .about-section_img {
         width: 250px;
         height: 258px;
-        margin: 40px 0 95px 0;
     }
     .about-section_header {
-        margin: 40px 0;
+        margin-top: 100px;
         width: 423px;
         height: 102px;
     }
@@ -1006,7 +1016,7 @@ body {
         align-items: center;
     }
     .center2 {
-        height: 783px;
+        height: 800px;
     }
     .about-section_p {
         font-size: 20px;
@@ -1014,13 +1024,17 @@ body {
         width: 668px;
         height: 208px;
     }
+    .service_wrapper {
+        height: 1770px;
+    }
     .service-section_header {
         font-size: 35px;
+        margin-top: 60px;
     }
     .service-section_top {
         flex-direction: column;
         justify-content: space-between;
-        height: 180px;
+        height: 250px;
         width: 600px;
         margin: 40px 0 30px 0;
     }
@@ -1033,19 +1047,16 @@ body {
     }
     .service-section_card-img {
         width: 280px;
-        height: 350px;
+        height: 320px;
     }
     .service-section_gallery {
         grid-template-columns: 280px 280px;
         grid-template-rows: 450px 450px 450px;
-        grid-column-gap: 107px;
-        grid-row-gap: 38px;
+        grid-column-gap: 80px;
+        grid-row-gap: 25px;
         width: 667px;
         height: 1460px;
         justify-self: center;
-    }
-    .service_wrapper {
-        height: 1780px;
     }
     .prices_wrapper {
         grid-template-columns: 350px 20px 350px;
@@ -1053,7 +1064,10 @@ body {
     }
     .prices-section_header {
         font-size: 40px;
-        margin: 67px 0 60px 0;
+        margin: 115px 0 60px 0;
+    }
+    .prices-section_right-side-header {
+        margin: 70px 0 30px 0;
     }
     .prices-section_right-side {
         font-size: 25px;
@@ -1064,7 +1078,7 @@ body {
         margin-left: 50px;
     }
     .center-prices {
-        height: 600px;
+        height: 700px;
     }
     .contacts_wrapper {
         grid-template-columns: 450px;
@@ -1101,9 +1115,9 @@ body {
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199.98px) {
-    .nav-wrapper {
-        width: 900px;
+@media screen and (min-width: 992px) and (max-width: 1264.98px) {
+    .nav-menu {
+        display: none;
     }
     .welcome_right-side {
         width: 470px;
@@ -1116,7 +1130,7 @@ body {
     }
     .welcome_wrapper {
         grid-template-columns: 400px 80px 400px;
-        height: 500px;
+        height: 600px;
     }
     .welcome_left-side {
         text-align: center;
@@ -1138,7 +1152,7 @@ body {
         margin: 0 0 80px 0;
     }
     .about-section_header {
-        margin: 70px 0 30px 0;
+        margin: 110px 0 30px 0;
         width: 850px;
     }
     .about-section_left-side {
@@ -1154,12 +1168,13 @@ body {
     }
     .service-section_header {
         width: 600px;
+        margin: 60px 0 20px 0;
     }
     .service-section_top {
         flex-direction: column;
         justify-content: space-between;
         text-align: center;
-        height: 160px;
+        height: 200px;
         width: 600px;
         margin: 50px;
     }
@@ -1193,21 +1208,21 @@ body {
     }
     .prices-section_header {
         font-size: 40px;
-        margin: 95px 0 60px 0;
+        margin: 150px 0 60px 0;
     }
     .prices-section_right-side-header {
         line-height: 45px;
+        margin-top: 65px;
     }
     .prices-section_right-side {
         font-size: 35px;
         line-height: 35px;
-        margin-top: 50px;
     }
     .prices-section_left-side {
         margin-left: 50px;
     }
     .center-prices {
-        height: 600px;
+        height: 700px;
     }
     .contacts_wrapper {
         grid-template-columns: 450px;
@@ -1238,4 +1253,3 @@ body {
         width: 400px;
     }
 }
-
