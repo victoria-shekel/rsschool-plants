@@ -41,8 +41,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(25deg, rgba(224,103,51,0.4) 0%, rgba(237, 242, 236, 0.5) 50%);;
-    height: 90px;
+    background: linear-gradient(25deg, rgba(224,103,51,0.4) 0%, rgba(237, 242, 236, 0.5) 50%);
+    height: 85px;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -490,14 +490,18 @@ body {
 /*** МЕДИА ЗАПРОСЫ ***/
 
 @media screen and (max-width: 379.98px) {
+    .nav-list {
+        display: none;
+    }
     .nav-center {
-        height: 40px;
+        height: 35px;
+        z-index: 2;
     }
     .nav-logo {
-        margin-left: 25px;
+        margin-right: 35px;
     }
     .nav-wrapper {
-        width: auto;
+        justify-content: end;
     }
     .welcome_wrapper {
         grid-template-columns: 1fr;
@@ -739,19 +743,20 @@ body {
     }
 }
 
-
 @media screen and (min-width: 380px) and (max-width: 767.98px) {
-    .nav-menu {
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 20px;
-    }
-    .nav-logo {
-        margin-left: 20px;
+    .nav-list {
+        display: none;
     }
     .nav-center {
-        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(25deg, rgba(224,103,51,0.35) 20%, rgba(237, 242, 236, 0.5) 50%);
+        height: 45px;
+        z-index: 2;
+    }
+    .nav-wrapper {
+        justify-content: space-around;
     }
     .welcome_wrapper {
         grid-template-columns: 1fr;
@@ -856,7 +861,7 @@ body {
     }
     .prices_wrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 70px 300px;
+        grid-template-rows: 300px 130px 300px;
         width: fit-content;
     }
     .prices-section_header {
@@ -868,6 +873,7 @@ body {
     .prices-section_right-side {
         text-align: center;
         justify-self: center;
+        margin: 0;
     }
     .prices-section_right-side-header {
         font-size: 20px;
@@ -894,7 +900,7 @@ body {
         justify-self: center;
     }
     .center-prices {
-        height: 710px;
+        height: 730px;
     }
     .dropbutton-name {
         font-size: 15px;
@@ -964,9 +970,6 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
-    .nav-menu {
-        display: none;
-    }
     .nav-logo {
         margin-left: 20px;
     }
@@ -1070,12 +1073,12 @@ body {
         margin: 70px 0 30px 0;
     }
     .prices-section_right-side {
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 30px;
+        line-height: 40px;
         margin-top: 50px;
     }
     .prices-section_left-side {
-        margin-left: 50px;
+        margin-left: 0;
     }
     .center-prices {
         height: 700px;
@@ -1116,9 +1119,6 @@ body {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1264.98px) {
-    .nav-menu {
-        display: none;
-    }
     .welcome_right-side {
         width: 470px;
     }
@@ -1203,8 +1203,8 @@ body {
         height: 1850px;
     }
     .prices_wrapper {
-        grid-template-columns: 450px 20px 450px;
-        width: fit-content;
+        grid-template-columns: 1fr 20px 1fr;
+        width: 100%;
     }
     .prices-section_header {
         font-size: 40px;
@@ -1212,17 +1212,24 @@ body {
     }
     .prices-section_right-side-header {
         line-height: 45px;
-        margin-top: 65px;
+        margin: 75px 0 40px 0;
     }
     .prices-section_right-side {
         font-size: 35px;
         line-height: 35px;
+        margin: 75px;
     }
     .prices-section_left-side {
-        margin-left: 50px;
+        margin-left: 80px;
+    }
+    .prices-section_left-side_dropdown {
+        margin: 0;
     }
     .center-prices {
         height: 700px;
+    }
+    .prices-img {
+        margin-top: 30px;
     }
     .contacts_wrapper {
         grid-template-columns: 450px;
@@ -1251,5 +1258,21 @@ body {
     }
     .footer-socials_wrapper {
         width: 400px;
+    }
+}
+
+@media screen and (min-width: 1265px) {
+    .prices-section_left-side {
+        margin-left: 40px;
+    }
+    .prices-section_right-side-header {
+        line-height: 50px;
+        margin: 35px 0 30px 0;
+    }
+    .prices-section_header {
+        margin: 125px 0 45px 0;
+    }
+    .prices-img {
+        margin-top: 30px;
     }
 }
