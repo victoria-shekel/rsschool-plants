@@ -601,7 +601,6 @@ body {
     .service-section_card {
         width: 220px;
         height: 200px;
-        font-size: 0;
     }
     .service-section_card-img {
         width: 220px;
@@ -847,7 +846,6 @@ body {
     .service-section_card {
         width: 280px;
         height: 450px;
-        font-size: 0;
         justify-self: center;
         text-align: center;
     }
@@ -1050,7 +1048,6 @@ body {
         width: 280px;
         height: 450px;
         text-align: center;
-        font-size: 0;
         justify-self: center;
     }
     .service-section_card-img {
@@ -1190,7 +1187,6 @@ body {
         width: 300px;
         height: 450px;
         text-align: center;
-        font-size: 0;
         justify-self: center;
     }
     .service-section_card-img {
